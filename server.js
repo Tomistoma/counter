@@ -1,4 +1,3 @@
-// server.js
 const express = require('express');
 const path = require('path');
 const app = express();
@@ -21,14 +20,15 @@ app.get('/delete', (req, res) => {
 
 // Default route to thank for incrementing the value
 app.get('/', (req, res) => {
+    count++; // Increment the count each time the root route is accessed
+    console.log(`Count incremented to: ${count}`);
     res.sendFile(path.join(__dirname, 'thanks.html'));
 });
 
 // Use the PORT environment variable or default to 3000 for local development
 const PORT = process.env.PORT || 3000;
 
-// Increment count every time the server starts
+// Start the server
 app.listen(PORT, () => {
-    count++;
     console.log(`Server is running on port ${PORT}. Current count: ${count}`);
 });
