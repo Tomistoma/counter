@@ -24,8 +24,11 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'thanks.html'));
 });
 
+// Use the PORT environment variable or default to 3000 for local development
+const PORT = process.env.PORT || 3000;
+
 // Increment count every time the server starts
-app.listen(3000, () => {
+app.listen(PORT, () => {
     count++;
-    console.log(`Server is running on http://localhost:3000. Current count: ${count}`);
+    console.log(`Server is running on port ${PORT}. Current count: ${count}`);
 });
