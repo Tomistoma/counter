@@ -1,46 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thank You</title>
+  <title>Hlasování UOCHB</title>
   <style>
+    /* Obecné nastavení stylu podle motivu UOCHB */
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Arial', sans-serif;
+      background-color: #f5f5f5; /* Světle šedé pozadí */
+      color: #333333; /* Tmavě šedý text */
+      text-align: center;
       margin: 0;
       padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background-color: #f3f4f6;
     }
-    .container {
-      text-align: center;
-      background: white;
-      padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    header {
+      background-color: #132967; /* Tmavě modrá barva UOCHB */
+      padding: 20px;
     }
-    h1 {
-      color: #4caf50;
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
+
+    header img {
+      max-width: 120px;
+      display: block;
+      margin: 0 auto;
     }
+
+    header h1 {
+      color: #ffffff; /* Bílý text */
+      font-size: 2em;
+      margin: 10px 0;
+    }
+
+    main {
+      margin: 50px auto;
+      padding: 20px;
+      max-width: 800px;
+      background-color: #ffffff; /* Bílý podklad */
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Jemný stín */
+      border-radius: 8px; /* Zaoblené rohy */
+    }
+
     p {
-      font-size: 1.2rem;
-      color: #555;
-      margin-bottom: 1rem;
+      font-size: 1.2em;
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: #002147;
+      color: #ffffff;
+      padding: 10px;
+      font-size: 0.9em;
+      position: absolute;
+      width: 100%;
+      bottom: 0;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Thank You!</h1>
-    <p>We greatly appreciate your input. There is nothing more you need to do.</p>
-    <hr style="margin: 2rem 0;">
-    <h1>Děkujeme!</h1>
-    <p>Velmi si vážíme vašeho příspěvku. Není třeba dělat nic dalšího.</p>
-  </div>
+  <header>
+    <img src="https://www.uochb.cz/upload/files/f4/5e/f45e111469a06563bc1940dce27f846155eea8f4.png"" alt="UOCHB Logo">
+    <h1>Ústav organické chemie a biochemie</h1>
+  </header>
+
+  <main>
+    <p>Hlas zaznamenán, děkujeme za příspěvek. Dále již nic více nemusíte dělat.</p>
+    <p>Your response has been recorded. Thank you for your contribution. You don’t need to do anything else.</p>
+  </main>
+
+  <footer>
+    &copy; 2025 Ústav organické chemie a biochemie. Všechna práva vyhrazena.
+  </footer>
 </body>
 </html>
